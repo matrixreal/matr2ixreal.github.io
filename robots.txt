@@ -1,4 +1,200 @@
-User-agent: *
-Disallow:
+# robots.txt for Momo Creepy Horror Video Call
+# Optimized for SEO 2025 - Google, Bing, and all major search engines
+# Last updated: 2025-01-24
+# Domain: https://matrixreal.github.io/
 
+# ===== ALLOW ALL SEARCH ENGINES =====
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.json$
+
+# ===== IMAGES AND MEDIA =====
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.ico$
+
+# ===== DISALLOW NON-PUBLIC DIRECTORIES =====
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.php$
+Disallow: /login
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# ===== GOOGLE SPECIFIC RULES =====
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+# ===== BING SPECIFIC RULES =====
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+# ===== OTHER MAJOR SEARCH ENGINES =====
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Sogou
+Allow: /
+
+# ===== SOCIAL MEDIA BOTS (for previews) =====
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ===== AI TRAINING BOTS (2025 Update) =====
+# Allow AI bots to index for search purposes
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# ===== BLOCK BAD BOTS AND SCRAPERS =====
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /
+
+User-agent: SurveyBot
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: CopyRightCheck
+Disallow: /
+
+User-agent: Crescent
+Disallow: /
+
+User-agent: SiteCheck
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebSauger
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+# ===== SITEMAP LOCATION =====
+# Primary XML Sitemap
 Sitemap: https://matrixreal.github.io/sitemap.xml
+
+# ===== CRAWL RATE NOTES =====
+# Note: Google does not support Crawl-delay (removed as per 2025 best practices)
+# Bing supports it but prefers Webmaster Tools settings
+# Use server-side rate limiting (HTTP 429) for better control
+
+# ===== END OF ROBOTS.TXT =====
